@@ -1,21 +1,45 @@
 aid: cuup-inc
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cuup-inc.png
 name: CUUP, Inc.
-description: 'CUUP, Inc. is a company surfaced as a portfolio company of insight-partners and added to
-  the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'CUUP, Inc. is a New York City-based direct-to-consumer intimates brand
+  founded in 2018 by Abby Morgan and Kearnon O''Molony, offering precision-fit bras,
+  underwear, loungewear, apparel, and swim across an extended range of cup and band
+  sizes sold through its shopcuup.com online store. Backed by Insight Partners and
+  Forerunner Ventures, CUUP was acquired by FULLBEAUTY Brands in July 2023 and now
+  runs on the FULLBEAUTY commerce platform. As a consumer retail company it exposes
+  no public developer API; this API Evangelist profile captures its public web presence,
+  domain security posture, and commercial policy pages.'
 url: https://raw.githubusercontent.com/api-evangelist/cuup-inc/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - insight-partners
+x-acquired-by: fullbeauty-brands
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- Retail
+- E-Commerce
+- Apparel
+- Intimates
+- Direct-to-Consumer
+- Fashion
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +49,18 @@ maintainers:
 common:
 - type: Website
   url: https://shopcuup.com/
+- type: DomainSecurity
+  url: security/cuup-inc-domain-security.yml
+- type: Support
+  url: https://shopcuup.com/help
+- type: TermsOfService
+  url: https://shopcuup.com/c/terms-of-use-ca.html
+- type: PrivacyPolicy
+  url: https://shopcuup.com/c/privacy-policy.html
+- type: Login
+  url: https://shopcuup.com/my-account
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
